@@ -10,35 +10,35 @@ import { BookOpenIcon } from "@heroicons/react/24/outline";
 
 const learningResources = [
   {
-    title: "Generative UI with Vercel AI SDK and EdgeDB",
-    url: "https://www.edgedb.com/blog/generative-ui-with-vercel-ai-sdk-and-edgedb",
+    title: "Generative UI with Vercel AI SDK and Gel",
+    url: "https://www.geldata.com/blog/generative-ui-with-vercel-ai-sdk-and-edgedb",
 
   },
   {
-    title: "Stop building auth, start building apps with EdgeDB and Next.js",
-    url: "https://www.edgedb.com/blog/stop-building-auth-start-building-apps-with-edgedb-and-next-js",
+    title: "Stop building auth, start building apps with Gel and Next.js",
+    url: "https://www.geldata.com/blog/stop-building-auth-start-building-apps-with-edgedb-and-next-js",
   },
   {
-    title: "Building a simple blog application with EdgeDB and Next.js",
-    url: "https://docs.edgedb.com/guides/tutorials/nextjs_app_router",
+    title: "Building a simple blog application with Gel and Next.js",
+    url: "https://docs.geldata.com/guides/tutorials/nextjs_app_router",
   },
   {
-    title: "Integrating EdgeDB with tRPC",
-    url: "https://docs.edgedb.com/guides/tutorials/trpc",
+    title: "Integrating Gel with tRPC",
+    url: "https://docs.geldata.com/resources/guides/tutorials/trpc",
   },
   {
     title: "The ultimate TypeScript query builder",
-    url: "https://www.edgedb.com/blog/designing-the-ultimate-typescript-query-builder",
+    url: "https://www.geldata.com/blog/designing-the-ultimate-typescript-query-builder",
   },
 ];
 
 const timeline = [
   {
     id: 0,
-    content: "Extend the EdgeDB schema",
+    content: "Extend the Gel schema",
     description: (
       <div>
-        Open the <code>schema.esdl</code> file and add your own types and
+        Open the <code>schema.gel</code> file and add your own types and
         fields. You can start by adding a <code>Post</code> type with a{" "}
         <code>title</code> and <code>content</code> field. For example:
         <pre className="mt-2">
@@ -60,8 +60,8 @@ const timeline = [
         Run the following commands to create a new migration file and apply it:
         <pre className="mt-2">
           {`\
-$ edgedb migration create
-$ edgedb migration apply
+$ npx gel migration create
+$ npx gel migration apply
 `}
         </pre>
       </div>
@@ -85,7 +85,7 @@ $ pnpm generate:all
   },
   {
     id: 3,
-    content: "Edit the EdgeDB query",
+    content: "Edit the Gel query",
     description: (
       <div>
         Open the <code>app/page.tsx</code> file and update the query
@@ -109,7 +109,7 @@ const postsQuery = e.select(e.Post, (_post) => ({
     description: (
       <div>
         Once you&apos;re happy with your changes, you can deploy your app to the
-        EdgeDB Cloud and Vercel. Follow the deployment instructions in the{" "}
+        Gel Cloud and Vercel. Follow the deployment instructions in the{" "}
         <a
           className="
           text-primary
@@ -121,9 +121,9 @@ const postsQuery = e.select(e.Post, (_post) => ({
           focus:outline-none
           focus:ring-opacity-60
         "
-          href='"https://docs.edgedb.com/guides/tutorials/nextjs_app_router#deploying-to-vercel"'
+          href="https://docs.geldata.com/resources/guides/tutorials/nextjs_app_router#with-gel-cloud"
         >
-          EdgeDB documentation
+          Gel documentation
         </a>
         .
       </div>
@@ -141,7 +141,7 @@ export default function NextSteps() {
             <BookOpenIcon className="h-6 inline mb-1" /> Learning Resources
           </h2>
           <p className="max-w-3xl text-base mx-auto mt-4 text-gray-600">
-            Explore a list of resources to help you get started with EdgeDB and Next.js.
+            Explore a list of resources to help you get started with Gel and Next.js.
           </p>
         </div>
         <div className="space-y-10">
