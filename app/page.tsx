@@ -29,7 +29,7 @@ export default async function Home() {
               Here are some next steps to get you up to speed.
             </p>
             <div className="mx-auto">
-              <p className="mt-10 text-base leading-10 text-gray-600 border border-[#259474] border-opacity-20 rounded-lg shadow-sm p-6 max-w-fit">
+              <p className="mt-10 text-base leading-10 text-gray-600 border border-primary border-opacity-20 rounded-lg shadow-sm p-6 max-w-fit">
                 The result of the query <code className="
               inline-block
               px-2
@@ -37,7 +37,7 @@ export default async function Home() {
               text-sm
               font-medium
               text-white
-              bg-[#238D88]
+              bg-[#7947D8]
               rounded
               shadow-sm
               select-none
@@ -48,7 +48,7 @@ export default async function Home() {
             text-sm
             font-medium
             text-white
-            bg-[#238D88]
+            bg-[#7947D8]
             rounded
             shadow-sm
             select-none
@@ -60,7 +60,7 @@ export default async function Home() {
               text-sm
               font-medium
               text-white
-              bg-[#238D88]
+              bg-[#7947D8]
               rounded
               shadow-sm
               select-none
